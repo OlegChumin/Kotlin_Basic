@@ -1,19 +1,4 @@
 fun main() {
-//    println("Hello World!")
-    // это комментарий
-
-    val numberOfOrders: Int = 42
-
-    var notificationText = "Не забудьте маску и перчатки"
-
-    println(numberOfOrders)
-//    println(notificationText)
-
-    notificationText = "Маски больше не потребуются!"
-    println(notificationText)
-    println()
-
-
     /**
     Names of large numbers
     миллион (6 нулей) -> million (6 digits)
@@ -30,11 +15,11 @@ fun main() {
     println("Integer: Byte/UByte, Short/UShort, Int/UInt, Long/ULong")
     // 8bit = 1Byte
     println("Byte and UByte (unsigned Byte) 8bit = 1Byte")
-    val byteNumMin: Byte = Byte.MIN_VALUE
-    val byteNumMax: Byte = Byte.MAX_VALUE
+    val byteNumMin: Byte = Byte.MIN_VALUE // -128
+    val byteNumMax: Byte = Byte.MAX_VALUE //  127
     println("Byte.MIN_VALUE = $byteNumMin; Byte.MAX_VALUE = $byteNumMax;")
-    val uByteNumMin: UByte = UByte.MIN_VALUE
-    val uByteNumMax: UByte = UByte.MAX_VALUE
+    val uByteNumMin: UByte = UByte.MIN_VALUE // 0
+    val uByteNumMax: UByte = UByte.MAX_VALUE // 255
     println("UByte.MIN_VALUE = $uByteNumMin; UByte.MAX_VALUE = $uByteNumMax;\n")
 
     // 16bit = 2x8bit = 2Bytes
@@ -61,10 +46,17 @@ fun main() {
     val longNumMax: Long = Long.MAX_VALUE //  9_223_372_036_854_775_807
     println("Long.MIN_VALUE = $longNumMin; Long.MAX_VALUE = $longNumMax;")
     val uLongNumMin: ULong = ULong.MIN_VALUE // 0
-    val uLongNumMax: ULong = ULong.MAX_VALUE // 18446744073709551615
+    val uLongNumMax: ULong = ULong.MAX_VALUE // 18_446_744_073_709_551_615
     println("ULong.MIN_VALUE = $uLongNumMin; ULong.MAX_VALUE = $uLongNumMax;\n")
 
     // вещественные
+    println("Float and Double")
+    val floatNumMin: Float = Float.MIN_VALUE // 1.4000000E-45
+    val floatNumMax: Float = Float.MAX_VALUE // 3.4028235E38
+    println("Float.MIN_VALUE = $floatNumMin; Float.MAX_VALUE = $floatNumMax;")
+    val doubleNumMin: Double = Double.MIN_VALUE // 4.9000000000000000E-324
+    val doubleNumMax: Double = Double.MAX_VALUE // 1.7976931348623157E308
+    println("Double.MIN_VALUE = $doubleNumMin; Double.MAX_VALUE = $doubleNumMax;\n")
 
     // строковые
     // логические
